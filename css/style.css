@@ -1,0 +1,122 @@
+body {
+	background: #101010 url(../images/bg-header.png) repeat-x;
+	font: 12px arial;
+	color: #fff;
+}
+
+#wrapper {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+header {
+	height: 318px;
+	text-align: center;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: inline;
+	text-transform: uppercase;
+}
+
+.logo img {
+	position: absolute;
+	left: 414px;
+	z-index: 100;
+}
+
+/* Верхний слайдер */
+.top_slider {
+	background: url(../images/bg-top_slider.png) repeat-x;
+	height: 141px;
+	margin: 0 auto 20px;
+	width: 960px
+}
+
+/* Строка RSS и корзина */
+.rss-basket {
+	background: url(../images/bg-basket-rss.png);
+	position: absolute;
+	left: 64px;
+	bottom: 80px;
+	height: 40px;
+	width: 872px;
+	font: 15px arial;
+}
+.rss {
+	float: left;
+	margin: 12px 5px 0 90px
+}
+.rss img {
+	margin: 0 0 -2px 10px;
+}
+
+.basket {
+	margin: 3px 0;
+	font: 13px/1.2 arial;
+	float: right;
+	text-align: left;
+	width: 350px;
+}
+.basket img {
+	vertical-align: middle;
+	margin: 0 5px;
+	float: left;
+}
+.basket a {
+	background: url(../images/basket_button.png);
+	width: 162px;
+	height: 33px;
+}
+
+/* Верхнее меню */
+.top_menu {
+	background: url(../images/bg-top_menu.png) repeat-x;
+	height: 47px;
+	font: 15px Times;
+	width: 960px;
+	position: absolute;
+	bottom: 32px;
+	left: 20px;
+}
+.top_menu_separator {
+	width: 548px;
+	height: 37px;
+	background: url(../images/top_menu_separator.png);
+	position: absolute;
+	bottom: 43px;
+	left: 226px;
+}
+
+	.top_menu_l {
+		background: url(../images/bg-top_menu_l.png) no-repeat left;
+		float: left;
+		height: 47px;
+		margin: 0;
+	}
+		.top_menu_l li a {
+			padding: 20px 70px;
+			color: #e2e15d;
+		}
+
+	.top_menu_r {
+		background: url(../images/bg-top_menu_r.png) no-repeat right;
+		float: right;
+		height: 47px;
+	}
+		.top_menu_r li a {
+			padding: 20px 60px;
+			color: #e2e15d;
+		}
+/* /Верхнее меню */
