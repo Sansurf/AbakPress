@@ -44,6 +44,19 @@ li {
 	width: 960px
 }
 
+/* Выбор региона и контсктный телефон */
+.region_phone {
+	margin: 0 70px;
+	color: #999;
+}
+.choose_region {
+	float: left;
+}
+.contact_phone {
+	float: right;
+	font-size: 30px;
+}
+
 /* Строка RSS и корзина */
 .rss-basket {
 	background: url(../images/bg-basket-rss.png);
@@ -74,11 +87,20 @@ li {
 	margin: 0 5px;
 	float: left;
 }
-.basket a {
-	background: url(../images/basket_button.png);
+.basket_button {
+	background: url(../images/basket_button.png) no-repeat;
+	text-align: center;
+	margin: -15px 5px;
+	padding-top: 7px;
+	float: right;
 	width: 162px;
 	height: 33px;
 }
+.basket_button a {
+	color: white;
+	font-size: 14px;
+}
+/* /Строка RSS и корзина */
 
 /* Верхнее меню */
 .top_menu {
@@ -105,18 +127,20 @@ li {
 		height: 47px;
 		margin: 0;
 	}
-		.top_menu_l li a {
+		.top_menu_l a {
 			padding: 20px 70px;
 			color: #e2e15d;
+			background: url(../images/top_menu_separator.png) right no-repeat;
 		}
-
+	
 	.top_menu_r {
 		background: url(../images/bg-top_menu_r.png) no-repeat right;
 		float: right;
 		height: 47px;
 	}
-		.top_menu_r li a {
+		.top_menu_r a {
 			padding: 20px 60px;
 			color: #e2e15d;
+			background: url(../images/top_menu_separator.png) left no-repeat;
 		}
 /* /Верхнее меню */
