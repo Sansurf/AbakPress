@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>ExWheels | Эксклюзивные диски и решетки</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/list_cities.css">
 </head>
+
 <body>
 
 	<div id="wrapper">
-
-<!-- Шапка сайта -->
 
 		<header>
 
@@ -24,7 +25,12 @@
 			<!-- Выбор региона и контактный телефон -->
 			<div class="region_phone">
 				<div class="choose_region">
-					Мой регион: 
+					<div class="my_region">Мой регион:&nbsp;</div>
+
+						<a id="choosed_city" onclick="down()">Екатеринбург</a>
+					
+						<ul id="dropdown" style="display: none;"></ul>
+					
 				</div>
 				<div class="contact_phone">
 					<sup>343</sup>/ <span style="font-family: Times; color: #fff;">356-52-63</span>
@@ -48,7 +54,6 @@
 			</div>
 			
 			<!-- Верхнее меню -->
-
 			<div class="top_menu">
 				<div class="top_menu_l">
 					<ul>
@@ -67,6 +72,8 @@
 		</header>
 
 	</div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

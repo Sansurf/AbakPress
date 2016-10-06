@@ -1,6 +1,6 @@
 body {
 	background: #101010 url(../images/bg-header.png) repeat-x;
-	font: 12px arial;
+	font: 14px arial;
 	color: #fff;
 }
 
@@ -25,11 +25,6 @@ ul {
 	list-style: none;
 }
 
-li {
-	display: inline;
-	text-transform: uppercase;
-}
-
 .logo img {
 	position: absolute;
 	left: 414px;
@@ -44,18 +39,26 @@ li {
 	width: 960px
 }
 
-/* Выбор региона и контсктный телефон */
+/* Выбор региона и контактный телефон */
 .region_phone {
-	margin: 0 70px;
+	margin: -10px 70px;
 	color: #999;
+	height: 40px;
 }
-.choose_region {
-	float: left;
-}
-.contact_phone {
-	float: right;
-	font-size: 30px;
-}
+	/* Выбор города */
+	.choose_region {
+		float: left;
+		line-height: 2.5;
+	}
+	
+	/* Телефон */
+	.contact_phone {
+		float: right;
+		font-size: 30px;
+	}
+		.contact_phone sup {
+			font-size: medium;
+		}
 
 /* Строка RSS и корзина */
 .rss-basket {
@@ -119,6 +122,10 @@ li {
 	position: absolute;
 	bottom: 43px;
 	left: 226px;
+}
+.top_menu li {
+	display: inline;
+	text-transform: uppercase;
 }
 
 	.top_menu_l {

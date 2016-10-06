@@ -1,0 +1,24 @@
+#dropdown {
+	width:416px;
+	height: 196px;
+	position: absolute;
+	border-radius:3px;
+	z-index: 200;
+	text-align: left;
+	background: url(../images/bg-list_cities.png);
+	margin-top: -36px;
+	margin-left: -16px;
+	line-height: 1;
+}
+
+#choosed_city {
+	background: url(../images/arrow_choose_region.png) no-repeat right;
+	text-decoration: underline dotted;
+	padding-right: 20px;
+	color: #fff;
+}
+
+.my_region {
+	float: left;
+	z-index: 250;
+}
