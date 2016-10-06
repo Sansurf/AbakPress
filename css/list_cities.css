@@ -1,14 +1,31 @@
 #dropdown {
-	width:416px;
+	width:295px;
 	height: 196px;
 	position: absolute;
 	border-radius:3px;
 	z-index: 200;
 	text-align: left;
-	background: url(../images/bg-list_cities.png);
+	background: url(../images/bg-list_cities.png) repeat-x;
 	margin-top: -36px;
 	margin-left: -16px;
 	line-height: 1;
+	padding: 10px 12px 10px 110px;
+	-ms-column-width: 90px;
+	-moz-column-width: 90px;
+	-webkit-column-width: 90px;
+	column-width: 90px;
+}
+#dropdown a {
+	color: #e2e15d;
+	line-height: 1.3;
+}
+
+.close_list_cities {
+	background: url(../images/close_city_list.png) no-repeat right;
+	width: 300px;
+	height:13px;
+	position: absolute;
+	cursor: pointer;
 }
 
 #choosed_city {
@@ -16,9 +33,12 @@
 	text-decoration: underline dotted;
 	padding-right: 20px;
 	color: #fff;
+	margin-left: 90px;
+	cursor: pointer;
 }
 
 .my_region {
 	float: left;
 	z-index: 250;
+	position: absolute;
 }
