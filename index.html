@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/list_cities.css">
+	<link rel="stylesheet" type="text/css" href="css/carousels.css">
 </head>
 
 <body>
@@ -15,7 +16,11 @@
 		<header>
 
 			<!-- Верхний слайдер -->
-			<div class="top_slider"></div>
+			<div class="carousel top_carousel">
+				<div class="arrow-prev"></div>
+				<ul id="top_carousel_ul"></ul>
+				<div class="arrow-next"></div>
+			</div>
 
 			<!-- Логотип -->
 			<div class="logo">
@@ -29,14 +34,13 @@
 					<div class="my_region">Мой регион:&nbsp;</div>
 					<a id="choosed_city" onclick="down()">Екатеринбург</a>
 					<ul id="dropdown" style="display: none;">
-						<div class="close_list_cities" onclick="down()"></div>
+						<div class="close_list_cities" onclick="down()"></div>	
 					</ul>
 				</div>
 
 				<div class="contact_phone">
 					<sup>343</sup>/ <span style="font-family: Times; color: #fff;">356-52-63</span>
 				</div>
-
 			</div>
 
 			<!-- Строка с RSS и корзиной -->

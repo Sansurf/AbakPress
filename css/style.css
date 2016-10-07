@@ -1,7 +1,16 @@
+/**
+ * Это главный файл стилей. Сопутствующие стили разделены на следующие файлы:
+ *
+ * 1. Выбор региона (выпадающий список) находится в css/list_cities.css
+ * 2. Всё, что связано с каруселями вынесено в отдельный файл css/carousels.css
+ */
+
 body {
 	background: #101010 url(../images/bg-header.png) repeat-x;
 	font: 14px arial;
 	color: #fff;
+	padding: 0;
+	margin: 0;
 }
 
 #wrapper {
@@ -29,14 +38,6 @@ ul {
 	position: absolute;
 	left: 414px;
 	z-index: 100;
-}
-
-/* Верхний слайдер */
-.top_slider {
-	background: url(../images/bg-top_slider.png) repeat-x;
-	height: 141px;
-	margin: 0 auto 20px;
-	width: 960px
 }
 
 /* Выбор региона и контактный телефон */

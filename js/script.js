@@ -1,4 +1,17 @@
-// Выпадающий список городов
+/* Верхний слайдер */
+
+var topCarouselUl = document.getElementById('top_carousel_ul');
+
+for (i=1; i<8; i++) {
+	var newLi = document.createElement('li');
+		newLi.href = "#";
+		newLi.className = "top_carousel_li";
+		newLi.innerHTML = "<img src='images/disks/"+i+".jpg' width='110' height='100'>";
+		topCarouselUl.appendChild(newLi);
+}
+
+
+/* Выпадающий список городов */
 
 var list_cities = ["Астрахань", "Воронеж", "Нижний Новгород",
 	"Новосибирск", "Краснодар", "Ростов", "Самара", "Уфа", "Казань",
@@ -6,7 +19,7 @@ var list_cities = ["Астрахань", "Воронеж", "Нижний Нов�
 	"Москва", "Санкт-Петербург", "Екатеринбург", "Тюмень", "Челябинск"
 ];
 
-var ul = document.getElementById('dropdown');
+var listCitiesUl = document.getElementById('dropdown');
 
 for(i=0; i<list_cities.length; i++) {
 	var newLi = document.createElement('li');
@@ -15,18 +28,18 @@ for(i=0; i<list_cities.length; i++) {
 		newA.href = '#';
 		newA.innerHTML = list_cities[i];
 	newLi.appendChild(newA);
-	ul.appendChild(newLi);
+	listCitiesUl.appendChild(newLi);
 }
 
 function setCity(city) {
-	ul.style.display = 'none';
+	listCitiesUl.style.display = 'none';
 	var choosedCity = document.getElementById('choosed_city');
 	choosedCity.innerHTML = city;
 }
 
 function down() {
-	if (ul.style.display == 'none')
-		ul.style.display = 'block';
+	if (listCitiesUl.style.display == 'none')
+		listCitiesUl.style.display = 'block';
 	else
-		ul.style.display = 'none';
+		listCitiesUl.style.display = 'none';
 }

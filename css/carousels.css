@@ -1,0 +1,36 @@
+/* Общие стили для каруселей */
+.carousel {
+	background-color: #333;
+}
+.arrow-prev {
+	width: 17px;
+	height: 100%;
+	float: left;
+	margin-left: 12px;
+	background: url(../images/arrow-l.png) no-repeat right;
+}
+.arrow-next {
+	width: 17px;
+	height: 100%;
+	float: right;
+  margin-right: 12px;
+	background: url(../images/arrow-r.png) no-repeat left;
+}
+
+/* Верхняя карусель */
+.top_carousel {
+	height: 141px;
+	margin: 0 auto 20px;
+	width: 960px;
+}
+#top_carousel_ul {
+	position: absolute;
+	left: 60px;
+	margin-left: 2px;
+}
+.top_carousel_li {
+	background: url(../images/carousel_border.png) no-repeat;
+	float: left;
+	width: 125px;
+	padding-top: 7px;
+}
