@@ -10,6 +10,15 @@ for (i=1; i<8; i++) {
 		topCarouselUl.appendChild(newLi);
 }
 
+/*var leftUIEl = document.getElementByClassName('arrow-left');
+var rightUIEl = document.getElementByClassName('arrow-right');
+
+leftUIEl.click(function() {
+
+});
+rightUIEl.click(function() {
+
+});*/
 
 /* Выпадающий список городов */
 
@@ -20,6 +29,13 @@ var list_cities = ["Астрахань", "Воронеж", "Нижний Нов�
 ];
 
 var listCitiesUl = document.getElementById('dropdown');
+
+function down() {
+		if (listCitiesUl.style.display == 'none')
+			listCitiesUl.style.display = 'block';
+		else
+			listCitiesUl.style.display = 'none';
+}
 
 for(i=0; i<list_cities.length; i++) {
 	var newLi = document.createElement('li');
@@ -35,11 +51,4 @@ function setCity(city) {
 	listCitiesUl.style.display = 'none';
 	var choosedCity = document.getElementById('choosed_city');
 	choosedCity.innerHTML = city;
-}
-
-function down() {
-	if (listCitiesUl.style.display == 'none')
-		listCitiesUl.style.display = 'block';
-	else
-		listCitiesUl.style.display = 'none';
 }
