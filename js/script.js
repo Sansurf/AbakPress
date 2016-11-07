@@ -2,7 +2,7 @@
 
 var topCarouselUl = document.getElementById('top_carousel_ul');
 
-for (i=1; i<8; i++) {
+for (i=1; i<15; i++) {
 	var newLi = document.createElement('li');
 		newLi.href = "#";
 		newLi.className = "top_carousel_li";

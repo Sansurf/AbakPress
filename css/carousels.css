@@ -33,9 +33,9 @@
 	width: 960px;
 }
 #top_carousel_ul {
-	margin-left: 8px;
-	width: 10000px;
+	width: 9999px;
 	position: relative;
+	transition: margin-left 250ms;
 }
 .top_carousel_li {
 	background: url(../images/carousel_border.png) no-repeat;
@@ -45,7 +45,8 @@
 	margin-right: 3px;
 }
 .wrapper_top_carusel {
-	width: 900px;
+	width: 892px;
+	margin-left: 8px;
   overflow: hidden;
   float: left;
   height: 141px;
