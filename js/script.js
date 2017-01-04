@@ -1,26 +1,50 @@
 /* Верхний слайдер */
 
+var topCarousel = document.getElementById('top_carousel');
 var topCarouselUl = document.getElementById('top_carousel_ul');
+var topCarouselLl = document.getElementsByClassName('top_carousel_li');
 
-for (i=1; i<15; i++) {
+var width = 127 // ширина изображения
+var position = -127; // начальный отступ слева
+var counter = 0; // счетчик нажатий на стрелку вправо
+
+for (var i=1; i<9; i++) {
 	var newLi = document.createElement('li');
-		newLi.href = "#";
 		newLi.className = "top_carousel_li";
 		newLi.innerHTML = "<img src='images/disks/"+i+".jpg' width='110' height='100'>";
 		topCarouselUl.appendChild(newLi);
 }
 
-/*var leftUIEl = document.getElementByClassName('arrow-left');
-var rightUIEl = document.getElementByClassName('arrow-right');
+topCarouselUl.style.width = topCarouselLl.length*width + width*2 + 'px';
 
-leftUIEl.click(function() {
+var firstLi = topCarouselUl.firstChild;
 
-});
-rightUIEl.click(function() {
 
-});*/
+// сдвиг вправо
+topCarousel.querySelector('.arrow-left').onclick = function() {
+  topCarouselUl.style.marginLeft = -254 + 'px';
+  var lastLi = topCarouselUl.lastChild;
+  var liAdd = lastLi.cloneNode(true);
+	topCarouselUl.insertBefore(liAdd, topCarouselUl.firstChild);
+  // position = position + width;
+  lastLi.remove();
+	topCarouselUl.style.marginLeft = -127 + 'px';
+};
 
-/* Выпадающий список городов */
+// сдвиг влево
+topCarousel.querySelector('.arrow-right').onclick = function() {
+	var counterLi = topCarouselUl.getElementsByClassName('top_carousel_li').item(counter);
+	var liAdd = counterLi.cloneNode(true);
+	topCarouselUl.appendChild(liAdd);
+  position = position - width;
+  topCarouselUl.style.marginLeft = position + 'px';
+  counter++;
+};
+
+/* /Верхний слайдер */
+
+
+/* Выбор города */
 
 var list_cities = ["Астрахань", "Воронеж", "Нижний Новгород",
 	"Новосибирск", "Краснодар", "Ростов", "Самара", "Уфа", "Казань",
@@ -52,3 +76,5 @@ function setCity(city) {
 	var choosedCity = document.getElementById('choosed_city');
 	choosedCity.innerHTML = city;
 }
+
+/* /Выбор города */

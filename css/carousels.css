@@ -1,7 +1,4 @@
 /* Общие стили для каруселей */
-.carousel {
-	background-color: #333;
-}
 .arrow {
 	width: 17px;
 	height: 35px;
@@ -27,15 +24,15 @@
 }
 
 /* Верхняя карусель */
-.top_carousel {
+#top_carousel {
 	height: 141px;
 	margin: 0 auto 20px;
 	width: 960px;
 }
 #top_carousel_ul {
-	width: 9999px;
 	position: relative;
 	transition: margin-left 250ms;
+	margin-left: -127px;
 }
 .top_carousel_li {
 	background: url(../images/carousel_border.png) no-repeat;
